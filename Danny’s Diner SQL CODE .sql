@@ -105,7 +105,8 @@ select s.customer_id ,sum(c.points) as total_points
 from sales s
 join cte c on c.product_id= s.product_id;
 
-Q 10 In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
+Q 10 In the first week after a customer joins the program (including their join date) they earn 
+2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
 WITH Dates AS 
 (
